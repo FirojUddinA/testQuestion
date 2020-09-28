@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /*    font-family: 'Montserrat', sans-serif;*/
+  font-family: "Roboto", sans-serif;
+}
+nav.navbar {
+  background: rgba(15, 15, 15, 0.671);
+  padding: 0;
+}
+nav .nav-item a {
+  padding: 24px 16px;
+}
+
+.button-part .button-part-weaper {
+  background-color: rgba(77, 76, 78, 0.575);
+  padding: 20px 16px;
+}
+.test button.btn,
+.right-drop button.btn {
+  padding: 10px 16px;
+  font-size: 15px;
+  background: rgb(65, 115, 221);
+}
+
+.right-drop button.btn {
+  background: rgb(44, 231, 222);
+}
+.timer {
+  width: 200px;
+  height: 44px;
+  background: rgb(235, 171, 34);
+  margin: 0 auto;
+  margin: 6px;
+  text-align: center;
+}
+
+body .clock #timer {
+  display: none;
+}
+
+body .clock #timer .endMessage {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 0.35s ease;
+}
+
+body .clock #timer .clock-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+body .clock #timer .clock-wrapper span {
+  font-size: 40px;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+body .clock #timer .clock-wrapper span.red {
+  transition: all 0.2s ease;
+  color: rgb(233, 19, 19);
+  font-size: 40px;
+}
+
+body .clock #timer .clock-wrapper span.red.hours,
+body .clock #timer .clock-wrapper span.red.minutes,
+body .clock #timer .clock-wrapper span.red.dots {
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+body .clock #timer .clock-wrapper span.dots {
+  margin-top: -5px;
+}
+
+.qb {
+  display: flex;
+  justify-content: space-around;
+}
+.qb button.btn {
+  font-size: 16px;
+  line-height: 16px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+.audio-question .aq-container {
+  width: 100%;
+  height: 60vh;
+}
+.audio-question .aq-container .audio,
+.audio-question .aq-container .question-wraper {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+}
+.audio {
+  background: #0d47a1;
+}
+.question-wraper {
+  background: #283593;
+}
+
+.question-wraper p {
+  color: #ffffff;
+  font-size: 18px;
+}
