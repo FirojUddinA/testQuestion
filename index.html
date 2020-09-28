@@ -84,7 +84,7 @@
                   role="toolbar"
                   aria-label="Toolbar with button groups"
                 >
-                  <div class="btn-group" role="group" aria-label="First group">
+                  <div class="btn-group" id="testButtons" role="group" aria-label="First group">
                     <button type="button" class="btn">Test 1</button>
                     <button type="button" class="btn">Test 2</button>
                     <button type="button" class="btn">Test 3</button>
@@ -178,7 +178,8 @@
             </div>
             <div class="col-sm-6 pl-0">
               <div class="question-wraper py-5">
-                <div class="t1q1">
+                <div class="t1q1 active">
+                  <p>Test 1</p>
                   <p>There is a cow in <input type="text" placeholder="1" id="t1q1b1" /></p>
                   <p>There is a cow in <input type="text" placeholder="2" id="t1q1b2" /></p>
                   <p>There is a cow in <input type="text" placeholder="3" id="t1q1b3" /></p>
@@ -196,6 +197,33 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
+                </div>
+                <div class="t1q1">
+                  <p>Test 2</p>
+                  <p>There is a cow in <input type="text" placeholder="1" id="t1q1b1" /></p>
+                  <p>There is a cow in <input type="text" placeholder="2" id="t1q1b2" /></p>
+                  <p>There is a cow in <input type="text" placeholder="7" id="t1q1b7" /></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis <input type="text" placeholder="8" id="t1q1b8" /> pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
+                </div>
+                <div class="t1q1">
+                  <p>Test 3</p>
+                  <p>There is a cow in <input type="text" placeholder="1" id="t1q1b1" /></p>
+                  <p>There is a cow in <input type="text" placeholder="2" id="t1q1b2" /></p>
+                  <p>There is a cow in <input type="text" placeholder="7" id="t1q1b7" /></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis <input type="text" placeholder="8" id="t1q1b8" /> pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
+                </div>
+                <div class="t1q1">
+                  <p>Test 4</p>
+                  <p>There is a cow in <input type="text" placeholder="1" id="t1q1b1" /></p>
+                  <p>There is a cow in <input type="text" placeholder="2" id="t1q1b2" /></p>
+                  <p>There is a cow in <input type="text" placeholder="7" id="t1q1b7" /></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis <input type="text" placeholder="8" id="t1q1b8" /> pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
                 </div>
@@ -235,6 +263,10 @@
         $("#gapNumber button").click(function(){
           var ind = $(this).index()+1;
           $("#t1q1b" + ind).focus();
+        })
+        $("#testButtons button").click(function(){
+         
+          $(".t1q1").eq($(this).index()).addClass('active').siblings().removeClass('active');
         })
       })
     </script>

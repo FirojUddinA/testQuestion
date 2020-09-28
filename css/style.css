@@ -129,3 +129,10 @@ body .clock #timer .clock-wrapper span.dots {
   line-height: 15px;
   text-align: center;
 }
+
+.t1q1 {
+  display: none;
+}
+.t1q1.active {
+  display: block;
+}
