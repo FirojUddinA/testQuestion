@@ -135,7 +135,7 @@
             </div>
           </div>
           <div class="row mt-3">
-            <div class="col-12 qb">
+            <div class="col-12 qb" id='gapNumber'>
               <button type="button" class="btn btn-primary">1</button>
               <button type="button" class="btn btn-primary">2</button>
               <button type="button" class="btn btn-primary">3</button>
@@ -180,13 +180,13 @@
               <div class="question-wraper py-5">
                 <div class="t1q1">
                   <p>There is a cow in <input type="text" placeholder="1" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="2" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="3" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="4" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="5" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="6" id="t1q1b1" /></p>
-                  <p>There is a cow in <input type="text" placeholder="7" id="t1q1b1" /></p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis <input type="text" placeholder="8" id="t1q1b1" /> pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
+                  <p>There is a cow in <input type="text" placeholder="2" id="t1q1b2" /></p>
+                  <p>There is a cow in <input type="text" placeholder="3" id="t1q1b3" /></p>
+                  <p>There is a cow in <input type="text" placeholder="4" id="t1q1b4" /></p>
+                  <p>There is a cow in <input type="text" placeholder="5" id="t1q1b5" /></p>
+                  <p>There is a cow in <input type="text" placeholder="6" id="t1q1b6" /></p>
+                  <p>There is a cow in <input type="text" placeholder="7" id="t1q1b7" /></p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis <input type="text" placeholder="8" id="t1q1b8" /> pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sed blanditiis pariatur fugit voluptate recusandae non distinctio, reprehenderit cum sequi esse! Voluptates velit ipsam molestias dicta quas at repudiandae optio.
@@ -229,5 +229,14 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- Your custom scripts (optional) -->
     <script type="text/javascript" src="./js/sctipt.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        $("#gapNumber button").click(function(){
+          var ind = $(this).index();
+          $("#t1q1b" + ind).focus();
+        })
+      })
+    </script>
   </body>
 </html>
