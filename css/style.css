@@ -12,12 +12,12 @@ nav.navbar {
   padding: 0;
 }
 nav .nav-item a {
-  padding: 24px 16px;
+  padding: 20px 16px;
 }
 
 .button-part .button-part-weaper {
   background-color: rgba(77, 76, 78, 0.575);
-  padding: 20px 16px;
+  padding: 15px 16px;
 }
 .test button.btn,
 .right-drop button.btn {
@@ -94,10 +94,12 @@ body .clock #timer .clock-wrapper span.dots {
 
 .audio-question .aq-container {
   width: 100%;
-  height: 60vh;
+  height: calc(100vh - 274px);
+  max-height: 60vh;
 }
 .audio-question .aq-container .audio {
-  height: 60vh;
+  height: calc(100vh - 274px);
+  max-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +111,8 @@ body .clock #timer .clock-wrapper span.dots {
 .question-wraper {
   background: #283593;
   overflow-y: scroll;
-  height: 60vh;
+  height: calc(100vh - 274px);
+  max-height: 60vh;
   padding: 20px;
 }
 
